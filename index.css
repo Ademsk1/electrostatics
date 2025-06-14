@@ -7,5 +7,11 @@ input {
 .panel {
     width: 200px;
     position: absolute;
-    background-color: white;
+    background-color: rgb(27, 11, 54);
+    color: white
+}
+
+fieldset {
+  border-color: rgb(33, 38, 39);
+  border-style: solid;
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../index.css">
     <title>Electrostatics</title>
     <style>
       body {
@@ -18,33 +18,28 @@
         }
 			}
 		</script>
+    
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
   </head>
   <body>
     <script type="module" src="index.js"></script>
-    <!-- <div class="panel">
-      <form>
+     <div class="panel">
       <fieldset>
-          <legend>Select an Electric field</legend>
-          <div>
-            <input type="radio" id="sine" name="drone" value="Sinusoidal" checked />
-            <label for="Sinusoidal">Sinusoidal</label>
-          </div>
+        <legend>Single particles</legend>
+        <p>Charged particles emit an Electric field \(E\) through space, which acts on other charged particles. In a scenario where two particles are present, the equation that governs the magnitude of the electric force is very much like the gravitational force:
+        $$F = \frac{kq_1 q_2}{r^2} $$
 
-          <div>
-            <input type="radio" id="lionear" name="drone" value="Linear"/>
-            <label for="Linear">Linear</label>
-          </div>
+        Field lines are used to represent the electric field, as seen in this model. They are a conventional technique to diagram electrostatic charges. Field lines travel from positive to negative. In this diagram, the particle at the centre is a proton. 
 
-          <div>
-            <input type="radio" id="no-wave" name="drone" value="None" />
-            <label for="None">None</label>
-          </div>
-          </fieldset>
-          <div>
-            <button type="submit">Submit</button>
-          </div>
-        </form>
-        <pre id="log"></pre>
-    </div> -->
+
+
+        <!-- where \( q_{1} \) and \( q_{2} \) represent the charges of each particle. In scenarios where there is more than 2 charged particles, the the principle of superposition is used, where the net force acting on one particle is the sum of all forces between said particle, and the others. There is a strong simmilarity to this and Newtons equation of gravity. -->
+        </p>
+        <button onclick="somefunction()">Next</button>
+      </fieldset>
+     </div>
   </body>
 </html>
