@@ -75,8 +75,6 @@ for (let i=0;i<10;i++) {
     arrs.push(arrowsOut(particle.position, 5))
 } 
 const MAX_RADIUS = 10
-let arrows = arrowsOut(particle.position, 5)
-console.log({arrows})
 let constantArrows = arrowsOut(particle.position, 5, MAX_RADIUS, "line")
 arrs.forEach((_, i)=> {
     scene.add(arrs[i])
@@ -96,7 +94,6 @@ function animate(t=0) {
             arrow.position.set(0,0,0)
             })
         }
-        console.log(t)
         const modifier = t > i*0.2
         arrowGroup.children.forEach((arrow)=> {
             if (modifier) {
