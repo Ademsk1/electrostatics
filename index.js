@@ -25,13 +25,6 @@ form.addEventListener(
   },
   false,
 );
-
-
-const f = (x) => {
-    efield = getElectricField()
-
-}
-
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
     75, window.innerWidth / window.innerHeight, 0.1, 1000
@@ -112,7 +105,7 @@ function animate(t=0) {
     const p = geometry.attributes.position
     for (let i=0;i<p.count;i++) {
         let x = p.getX(i)
-        let y = p.getY(i)
+        // let y = p.getY(i)
         const z = Math.sin((x) -t*3)*efield[1] + x*efield[0]
         p.setZ(i, z)
         

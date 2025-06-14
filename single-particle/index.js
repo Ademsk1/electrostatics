@@ -57,24 +57,6 @@ const material = new THREE.MeshBasicMaterial({color: 0x777777, wireframe: true,}
 
 
 
-const newShape = () => {
-    const group = new THREE.Group()
-
-    const sphere = new THREE.IcosahedronGeometry(0.1, 20)
-    const matElectron = new THREE.MeshStandardMaterial({color: 0xff0000})
-    const matProton = new THREE.MeshStandardMaterial({color: 0x0000ff})
-
-    const electron = new THREE.Mesh(sphere, matElectron)
-    const proton = new THREE.Mesh(sphere, matProton)
-
-    proton.position.set(1, 0, 2)
-    electron.position.set(-1,0,2)
-    group.add(proton)
-    group.add(electron)
-    return group
-}
-
-
 const group = newShape()
 
 scene.add(group)
