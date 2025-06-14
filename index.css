@@ -1,0 +1,11 @@
+
+
+input {
+  width: min-content;
+  margin: 0.4rem;
+}
+.panel {
+    width: 200px;
+    position: absolute;
+    background-color: white;
+}
